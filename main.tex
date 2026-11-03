@@ -1,0 +1,65 @@
+% useful links
+% GitHub Repo: https://github.com/sxndrx-cxlxnx/TU_Computing_4_Social_Good
+% Figma Design Projekt: https://www.figma.com/design/vKBOiex8tUQbbK5JqksHRP/Comp4SG---TheMissingAdult?node-id=0-1&m=dev&t=IILaY3qqmfAZ6BlI-1
+
+% Kommunikation: WhatsApp + Discord
+
+
+\documentclass[
+	english,% Main language as global option
+	accentcolor=9c,% Choose accent color: For a list of available colors see the full tudapub documentation
+	type=intern, % Minimal setup without accent color
+	marginpar=false,% Disable marginpar
+%	accept-missing-logoes=true,% No error in case logo files are not available
+%	logofile=example-image,% In case logo should be replaced
+    logofile={media/tuda_logo.png}
+]{tudapub}
+
+\usepackage[english]{babel}
+\usepackage[autostyle]{csquotes}% \enquote, to simplify use of quotation marks
+
+\usepackage[backend=bibtex]{biblatex}
+
+\title{Team 3 - TheMissingAdult}
+\author{Umut B. Aktas, Sude Avara, Zhaneta Gasparyan, Simona Georgieva, Sandra Gräf, Anna Trutneva}
+\date{DD.MM.YYYY}
+
+\begin{document}
+
+\maketitle
+
+\tableofcontents
+% Additional lists like \listoffigures or acronyms might be added here
+
+%\enquote{DEMO-TUDaReport.tex} is a minimal template for using the document class \enquote{tudapub.cls}. It is part of TUDa-CI, which is the official template bundle of TU Darmstadt. The original version was inspired by the \enquote{tuddesign} bundle by C.~v.~Loewenich and J.~Werner.
+
+\section{Template Instructions}
+Disclaimer: This template serves as a structured guide for your report. While the format and sections provided offer a framework, you have  creative freedom to adapt and modify the template to best suit your project and presentation style. 
+
+The key requirement is ensuring all necessary information and core design  elements are included in your final submission. Feel free to reorganize sections, adjust the layout, incorporate visual elements, or present your findings in whatever format best communicates your design process and outcomes. Think of this as a starting point rather than a rigid structure. 
+
+% use \input for including without pagebreak
+
+% Design
+\include{chapter/a_design/2_motivation}
+\include{chapter/a_design/3_overview}
+\include{chapter/a_design/4_design_thinking}
+\include{chapter/a_design/5_requirements}
+\include{chapter/a_design/6_design}
+\include{chapter/a_design/7_architecture}
+
+% surroundings
+\include{chapter/b_surroundings/8_risk_management}
+\include{chapter/b_surroundings/9_legal_and_ethical_considerations}
+\include{chapter/b_surroundings/10_social_impact_assessment}
+\include{chapter/b_surroundings/11_team_reflections}
+\include{chapter/b_surroundings/12_key_learnings}
+\include{chapter/b_surroundings/13_poster_and_video}
+
+% orga
+\include{chapter/c_orga/14_team}
+\include{chapter/c_orga/15_ai_disclaimer}
+\include{chapter/c_orga/16_references}
+\include{chapter/c_orga/17_appendix}
+
+\end{document}
