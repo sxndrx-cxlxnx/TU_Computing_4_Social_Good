@@ -1,26 +1,40 @@
 % useful links
-% GitHub Repo: https://github.com/sxndrx-cxlxnx/TU_Computing_4_Social_Good
-% Figma Design Projekt: https://www.figma.com/design/vKBOiex8tUQbbK5JqksHRP/Comp4SG---TheMissingAdult?node-id=0-1&m=dev&t=IILaY3qqmfAZ6BlI-1
+
+% Notion (Aufgabenboard):
+% https://app.notion.com/p/Teamspace-Startseite-792cfed96e0d838b930c01feb08adf30?source=copy_link
+
+% LaTeX:
+% https://sharelatex.tu-darmstadt.de/6146834165krbsdbsngyjt#763634
+
+% GitHub Repo:
+% https://github.com/sxndrx-cxlxnx/TU_Computing_4_Social_Good
+
+% Figma Design Projekt:
+% https://www.figma.com/design/vKBOiex8tUQbbK5JqksHRP/Comp4SG---TheMissingAdult?node-id=0-1&m=dev&t=IILaY3qqmfAZ6BlI-1
 
 % Kommunikation: WhatsApp + Discord
 
 
 \documentclass[
-	english,% Main language as global option
+	ngerman,% Main language as global option
 	accentcolor=9c,% Choose accent color: For a list of available colors see the full tudapub documentation
 	type=intern, % Minimal setup without accent color
 	marginpar=false,% Disable marginpar
+    parskip=half,% Absätze mit Abstand statt Einzug
 %	accept-missing-logoes=true,% No error in case logo files are not available
 %	logofile=example-image,% In case logo should be replaced
-    logofile={media/tuda_logo.png}
+    logofile=media/tuda_logo.png
 ]{tudapub}
 
-\usepackage[english]{babel}
+\usepackage[ngerman]{babel}
 \usepackage[autostyle]{csquotes}% \enquote, to simplify use of quotation marks
+\usepackage{tabularx}
+\usepackage{booktabs} % Für professionelle Linien (\toprule, \midrule, \bottomrule)
 
-\usepackage[backend=bibtex]{biblatex}
-
+\usepackage[backend=biber]{biblatex}
+\addbibresource{references.bib}
 \title{Team 3 - TheMissingAdult}
+\subtitle{It takes a village to raise a child.}
 \author{Umut B. Aktas, Sude Avara, Zhaneta Gasparyan, Simona Georgieva, Sandra Gräf, Anna Trutneva}
 \date{DD.MM.YYYY}
 
